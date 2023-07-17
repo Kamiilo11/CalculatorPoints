@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/mediaQ.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="nav">
+        <p class="nav_title">Club points calculator</p>
+        <img src="" alt="Calculator logo">
+    </header>
+    
+    <main>
+        <section class="main_description">
+            <h1 class="main-title">Welcome to our club points calculator</h1>
+            <p class="main-text">Please select one of the following options to start calculating</p>
+            <div class="main-buttons-container">
+                <button class="main-buttons-casino">Casino</button>
+                <button class="main-buttons-sports">Sports</button>
+            </div>
+        </section>
+
+        <section class="casino_section">
+            <h3 class="casino_section-title">Casino</h3>
+            <div class="casino_iic-container">
+                <button class="casino_iic-button">Important Information</button>
+                <span class="casino_iic-icon">icon</span>
+            </div>
+            <div class="casino-iic-text">
+                <ul class="casino-iic-list">
+                    <li>Please bear in mind that the bingo and poker games are treated like slot games, so you should use that option when calculating with that kind of games.</li>
+                    <li>The live games like Monopoly or dream catcher are calculated like a roulette, please use the according option.</li>
+                    <li>Also the baccarat games have to be calculated using the option for Blackjack.</li>
+                </ul>
+            </div>
+            <div class="casino_odds_container">
+                <form>
+                    <input type="radio" id="casino_slots" value="1000" name="casino">
+                    <label for="casino_slots">Slots</label>
+                    <label for="casino_slots">$1000</label>
+                    <input type="radio" id="casino_blackjack" value="3000" name="casino">
+                    <label for="casino_blackjack">Blackjack</label>
+                    <label for="casino_blackjack">$3000</label>
+                    <input type="radio" id="casino_roulette" value="15000" name="casino">
+                    <label for="casino_roulette">Roulette</label>
+                    <label for="casino_roulette">$15000</label>
+                </form>
+            </div>
+        </section>
+
+        <section class="sports_section">
+            <h3 class="sports_section-title">Sports</h3>
+            <div class="sports_iic-container">
+                <button class="sports_iic-button">Important information</button>
+                <span class="sports_iic-icon">icon</span>
+            </div>
+            <div class="sports-iic-text">
+                <ul class="sports-iic-list">
+                    <li>All those bets whose odds are below 1,4 does not grant any points.</li>
+                    <li>The system bets do not acumulate any points.</li>
+                    <li>For the points to be reflected on the balance the bet must have been closed either lost or won.</li>
+                </ul>
+            </div>
+            <div class="sports_buttons_container">
+                <button class="sports_buttons-single">Single</button>
+                <button class="sports_buttons-single">Combi</button>
+            </div>
+            <div class="sports_odds_big_container">
+                <div class="sports_odds_single_container">
+                    <form>
+                        <input type="radio" id="sports_single1" value="1000" name="sports">
+                        <label for="sports_single1">Between 1,4 y 1,8</label>
+                        <label for="sports_single1">$1000</label>
+                        <input type="radio" id="sports_single2" value="3000" name="sports">
+                        <label for="sports_single2">Between 1,81 y 3,0</label>
+                        <label for="sports_single2">$700</label>
+                        <input type="radio" id="sports_single3" value="15000" name="sports">
+                        <label for="sports_single3">Between 3,01 y 7,50</label>
+                        <label for="sports_single3">$300</label>
+                        <input type="radio" id="sports_single4" value="15000" name="sports">
+                        <label for="sports_single4">Over 7,51</label>
+                        <label for="sports_single4">$100</label>
+                    </form>
+                </div>
+                <div class="sports_odds_combi_container">
+                    <form>
+                        <input type="radio" id="sports_combi1" value="1000" name="sports">
+                        <label for="sports_combi1">Between 1,4 y 1,8</label>
+                        <label for="sports_combi1">$400</label>
+                        <input type="radio" id="sports_combi2" value="3000" name="sports">
+                        <label for="sports_combi2">Between 1,81 y 3,0</label>
+                        <label for="sports_combi2">$300</label>
+                        <input type="radio" id="sports_combi3" value="15000" name="sports">
+                        <label for="sports_combi3">Between 3,01 y 7,50</label>
+                        <label for="sports_combi3">$200</label>
+                        <input type="radio" id="sports_combi4" value="15000" name="sports">
+                        <label for="sports_combi4">Over 7,51</label>
+                        <label for="sports_combi4">$100</label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="result">
+            <form>
+                <input type="number" id="user" placeholder="Input the value here">
+                <label for="user">Input the value here</label>
+                <button type="submit">Calculate</button>
+            </form>
+        </section>
+        <script href="/main.js"></script>
+    </main>
+    <footer class="contact">
+        <div class="social_media">
+            <a href=""><span>Github</span></a>
+            <a href=""><span>Email</span></a>
+        </div>
+            <p>For educational purposes only</p>
+    </footer>
+</body>
+</html>
