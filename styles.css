@@ -1,0 +1,17 @@
+:root {
+    --fondo: #F5F5F5;
+    --sections: #EBEBEB;
+    --texts: #1B065E;
+    --titles: #9E2B25;
+    --buttons: #FF6700;
+}
+
+body {
+    background-color: var(--sections);
+}
+h1 {
+    color: var(--titles);
+}
+p {
+    color: var(--texts);
+}
