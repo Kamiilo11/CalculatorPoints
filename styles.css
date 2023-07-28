@@ -1,9 +1,9 @@
 :root {
     --fondo: #F5F5F5;
     --sections: #EBEBEB;
-    --texts: #1B065E;
+    --texts: #051946;
     --titles: #9E2B25;
-    --buttons: #FF6700;
+    --buttons: #ff6600b7;
 }
 
 body {
@@ -24,23 +24,58 @@ html{
     width: 100%;
     height: 5rem;
     display: flex;
-    
-}
-
-.nav_img-container {
-    width: 30%;
-    height: auto;
-    text-align: end;
+    justify-content: space-between;
+    background-color: var(--sections);
+    margin: 0 0 1rem 0;
 }
 
 .nav img {
     mix-blend-mode: color-burn;
     height: 90%;
+    margin: auto 1rem auto 0;
 }
 
-h1 {
+.nav .nav_title {
+    color: var(--titles);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto 0 auto 0.5rem;
+}
+
+/*Main description section*/
+
+.main_description {
+    background-color: var(--sections);
+    padding: 0.5rem;
+}
+
+.main-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
     color: var(--titles);
 }
-p {
+
+.main-text {
+    font-size: 1.35rem;
+    margin: 0 0 1rem 0;
     color: var(--texts);
+    font-weight: 400;
+}
+
+.main-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0 0 0;
+}
+
+.main-buttons-casino, .main-buttons-sports {
+    width: 8rem;
+    height: 4rem;
+    border: 0.1rem solid var(--titles);
+    border-radius: 0.5rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    color: var(--texts);
+    background-color: var(--buttons);
 }
