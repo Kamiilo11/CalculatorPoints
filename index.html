@@ -33,7 +33,7 @@
             <h3 class="casino_section-title">Casino</h3>
             <div class="casino_iic-container">
                 <button class="casino_iic-button">Important Information</button>
-                <span class="casino_iic-icon">icon</span>
+                <span class="casino_iic-icon"></span>
             </div>
             <div class="casino-iic-text">
                 <ul class="casino-iic-list">
@@ -44,15 +44,21 @@
             </div>
             <div class="casino_odds_container">
                 <form>
-                    <input type="radio" id="casino_slots" value="1000" name="casino">
-                    <label for="casino_slots">Slots</label>
-                    <label for="casino_slots">$1000</label>
-                    <input type="radio" id="casino_blackjack" value="3000" name="casino">
-                    <label for="casino_blackjack">Blackjack</label>
-                    <label for="casino_blackjack">$3000</label>
-                    <input type="radio" id="casino_roulette" value="15000" name="casino">
-                    <label for="casino_roulette">Roulette</label>
-                    <label for="casino_roulette">$15000</label>
+                    <div class="slots_container">
+                        <input type="radio" id="casino_slots" value="1000" name="casino">
+                        <label for="casino_slots" class="label1">Slots</label>
+                        <label for="casino_slots">$1000</label>
+                    </div>
+                    <div class="blackjack_container">
+                        <input type="radio" id="casino_blackjack" value="3000" name="casino">
+                        <label for="casino_blackjack">Blackjack</label>
+                        <label for="casino_blackjack">$3000</label>
+                    </div>
+                    <div class="roulette_container">
+                        <input type="radio" id="casino_roulette" value="15000" name="casino">
+                        <label for="casino_roulette">Roulette</label>
+                        <label for="casino_roulette">$15000</label>
+                    </div>
                 </form>
             </div>
         </section>
@@ -61,7 +67,7 @@
             <h3 class="sports_section-title">Sports</h3>
             <div class="sports_iic-container">
                 <button class="sports_iic-button">Important information</button>
-                <span class="sports_iic-icon">icon</span>
+                <span class="sports_iic-icon"></span>
             </div>
             <div class="sports-iic-text">
                 <ul class="sports-iic-list">
@@ -72,36 +78,52 @@
             </div>
             <div class="sports_buttons_container">
                 <button class="sports_buttons-single">Single</button>
-                <button class="sports_buttons-single">Combi</button>
+                <button class="sports_buttons-combi">Combi</button>
             </div>
             <div class="sports_odds_big_container">
                 <div class="sports_odds_single_container">
+                    <div class="single1_container">
                         <input type="radio" id="sports_single1" value="1000" name="sports">
                         <label for="sports_single1">Between 1,4 y 1,8</label>
                         <label for="sports_single1">$1000</label>
+                    </div>
+                    <div class="single2_container">
                         <input type="radio" id="sports_single2" value="3000" name="sports">
                         <label for="sports_single2">Between 1,81 y 3,0</label>
                         <label for="sports_single2">$700</label>
+                    </div>    
+                    <div class="single3_container">
                         <input type="radio" id="sports_single3" value="15000" name="sports">
                         <label for="sports_single3">Between 3,01 y 7,50</label>
                         <label for="sports_single3">$300</label>
+                    </div>
+                    <div class="single4_container">
                         <input type="radio" id="sports_single4" value="15000" name="sports">
                         <label for="sports_single4">Over 7,51</label>
                         <label for="sports_single4">$100</label>
+                    </div>
                 </div>
                 <div class="sports_odds_combi_container">
+                    <div class="combi1_container">
                         <input type="radio" id="sports_combi1" value="1000" name="sports">
                         <label for="sports_combi1">Between 1,4 y 1,8</label>
                         <label for="sports_combi1">$400</label>
+                    </div>
+                    <div class="combi2_container">
                         <input type="radio" id="sports_combi2" value="3000" name="sports">
                         <label for="sports_combi2">Between 1,81 y 3,0</label>
                         <label for="sports_combi2">$300</label>
+                    </div>
+                    <div class="combi3_container">
                         <input type="radio" id="sports_combi3" value="15000" name="sports">
                         <label for="sports_combi3">Between 3,01 y 7,50</label>
                         <label for="sports_combi3">$200</label>
+                    </div>
+                    <div class="combi4_container">
                         <input type="radio" id="sports_combi4" value="15000" name="sports">
                         <label for="sports_combi4">Over 7,51</label>
                         <label for="sports_combi4">$100</label>
+                    </div>
                 </div>
             </div>
         </section>

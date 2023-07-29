@@ -47,8 +47,10 @@ html{
 .main_description {
     background-color: var(--sections);
     padding: 0.5rem;
+    margin: 0 0 1rem 0;
 }
 
+/*Titles general styles*/
 .main-title {
     font-size: 1.6rem;
     font-weight: bold;
@@ -63,13 +65,14 @@ html{
     font-weight: 400;
 }
 
-.main-buttons-container {
+/*buttons section general styles*/
+.main-buttons-container, .sports_buttons_container {
     display: flex;
     justify-content: space-around;
     margin: 1.5rem 0 0 0;
 }
 
-.main-buttons-casino, .main-buttons-sports {
+.main-buttons-casino, .main-buttons-sports, .sports_buttons-single, .sports_buttons-combi {
     width: 8rem;
     height: 4rem;
     border: 0.1rem solid var(--titles);
@@ -79,3 +82,71 @@ html{
     color: var(--texts);
     background-color: var(--buttons);
 }
+
+/*Casino section*/
+
+.casino_section, .sports_section {
+    background-color: var(--sections);
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.casino_section-title, .sports_section-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--titles);
+    margin: 0;
+}
+
+/*button important info general styles*/
+
+.casino_iic-container, .sports_iic-container { 
+    padding: 0.5rem;
+    display: flex;
+}
+
+.casino_iic-button, .sports_iic-button {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    text-align: start;
+    color: var(--titles);
+    background-color: var(--sections);
+    padding: 0;
+}
+
+.casino_iic-icon, .sports_iic-icon {
+    width: 2rem;
+    height: 3rem;
+    background-image: url("https://i.postimg.cc/DmVMvsqt/images-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.casino-iic-list, .sports-iic-list {
+    margin: 0;
+    padding: 0 0 0 3rem;
+    font-size: 1.35rem;
+    color: var(--texts);
+    font-weight: 400;
+}
+
+.casino_odds_container form {
+    font-size: 1.35rem;
+    color: var(--texts);
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+/*Sports section*/
+
+.sports_odds_big_container {
+    display: flex;
+    font-size: 1.35rem;
+    color: var(--texts);
+    font-weight: 400;
+}
+
