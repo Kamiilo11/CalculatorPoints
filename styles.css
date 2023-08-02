@@ -27,6 +27,7 @@ html{
     justify-content: space-between;
     background-color: var(--sections);
     margin: 0 0 1rem 0;
+    border-radius: 0.5rem;
 }
 
 .nav img {
@@ -48,6 +49,7 @@ html{
     background-color: var(--sections);
     padding: 0.5rem;
     margin: 0 0 1rem 0;
+    border-radius: 0.5rem;
 }
 
 /*Titles general styles*/
@@ -89,9 +91,10 @@ html{
     background-color: var(--sections);
     padding: 0.5rem;
     margin: 0 0 1rem 0;
+    border-radius: 0.5rem;
 }
 
-.casino_section-title, .sports_section-title {
+.casino_section-title, .sports_section-title, .result_title{
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--titles);
@@ -148,5 +151,46 @@ html{
     font-size: 1.35rem;
     color: var(--texts);
     font-weight: 400;
+    margin: 1rem 0 0 0;
 }
 
+.sports_odds_single_container {
+    margin: 0 0.5rem 0 0;
+}
+
+/*Result section*/
+
+.result_section {
+    background-color: var(--sections);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#user_input {
+    margin: 0.5rem 0 0 0;
+    height: 3rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    font-family: "Exo", sans-serif;
+}
+
+.submit_btn {
+    width: 8rem;
+    height: 3rem;
+    border: 0.1rem solid var(--titles);
+    border-radius: 0.5rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    color: var(--texts);
+    background-color: var(--buttons);
+}
+
+.display_result {
+    margin: 0.5rem 0 0 0;
+    width: 50%;
+    height: 3rem;
+    text-align: center;
+    justify-content: center;
+}
