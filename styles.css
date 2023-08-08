@@ -94,7 +94,7 @@ html{
     border-radius: 0.5rem;
 }
 
-.casino_section-title, .sports_section-title, .result_title{
+.casino_section-title, .sports_section-title, .result_title, .result_title2{
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--titles);
@@ -106,6 +106,7 @@ html{
 .casino_iic-container, .sports_iic-container { 
     padding: 0.5rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .casino_iic-button, .sports_iic-button {
@@ -152,6 +153,7 @@ html{
     color: var(--texts);
     font-weight: 400;
     margin: 1rem 0 0 0;
+    justify-content: space-around;
 }
 
 .sports_odds_single_container {
@@ -160,12 +162,21 @@ html{
 
 /*Result section*/
 
+.result_title {
+    width: 40%;
+}
+
 .result_section {
     background-color: var(--sections);
     padding: 0.5rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
+}
+
+.result_section form {
+    display: flex;
+    justify-content: space-between;
 }
 
 #user_input {
@@ -188,8 +199,14 @@ html{
     background-color: var(--buttons);
 }
 
+.total_pts {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
 .display_result_container {
-    margin: 0.5rem 0 0 0;
+    margin: 0;
     width: 15rem;
     height: 3rem;
     background-color: var(--fondo);
@@ -219,6 +236,7 @@ html{
 .social_media {
     margin: auto 0;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .social_media a:nth-child(1) {
@@ -227,5 +245,6 @@ html{
 
 .disclaimer {
     font-size: 1.1rem;
+    font-weight: bold;
     color: var(--texts);
 }
