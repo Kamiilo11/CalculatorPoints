@@ -87,11 +87,20 @@ html{
 
 /*Casino section*/
 
-.casino_section, .sports_section {
+.casino_section {
     background-color: var(--sections);
     padding: 0.5rem;
     margin: 0 0 1rem 0;
     border-radius: 0.5rem;
+    display: none;
+}
+
+.sports_section {
+    background-color: var(--sections);
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    border-radius: 0.5rem;
+    display: none;
 }
 
 .casino_section-title, .sports_section-title, .result_title, .result_title2{
@@ -162,10 +171,6 @@ html{
 
 /*Result section*/
 
-.result_title {
-    width: 40%;
-}
-
 .result_section {
     background-color: var(--sections);
     padding: 0.5rem;
@@ -174,10 +179,7 @@ html{
     flex-direction: column;
 }
 
-.result_section form {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 #user_input {
     margin: 0.5rem 0 1rem 0;
@@ -199,10 +201,8 @@ html{
     background-color: var(--buttons);
 }
 
-.total_pts {
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
+.result_title2 {
+    margin: 0 0 0.5rem 0;
 }
 
 .display_result_container {

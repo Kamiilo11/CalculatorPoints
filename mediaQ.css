@@ -3,18 +3,31 @@
         display: flex;
     }
 
-    .casino_odds_container form .slots_container, .blackjack_container, .roulette_container {
-        background-color: #9E2B25;
-        width: 30%;
+    .casino_odds_container form .blackjack_container, .roulette_container, .slots_container {
+        width: 25%;
     }
 
-    .casino_odds_container form .blackjack_container, .roulette_container {
-        background-color: #9E2B25;
-        width: 40%;
+    .casino_odds_container form {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
-@media screen and (min-width: 450px) {
-    .result_section {
+@media screen and (min-width: 450px) {    
+    .result_section form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .casino_odds_container form {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 75rem;
+        margin: auto;
     }
 }
