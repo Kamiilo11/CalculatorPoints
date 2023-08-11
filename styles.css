@@ -139,6 +139,10 @@ html{
     background-position: center;
 }
 
+.casino-iic-text {
+    display: none;
+}
+
 .casino-iic-list, .sports-iic-list {
     margin: 0;
     padding: 0 0 0 3rem;
@@ -156,6 +160,10 @@ html{
 
 /*Sports section*/
 
+.sports-iic-text {
+    display: none;
+}
+
 .sports_odds_big_container {
     display: flex;
     font-size: 1.35rem;
@@ -167,6 +175,15 @@ html{
 
 .sports_odds_single_container {
     margin: 0 0.5rem 0 0;
+    display: block;
+    position: relative;
+    z-index: -1; /*change under revision*/
+}
+
+.sports_odds_combi_container {
+    display: block;
+    position: relative;
+    z-index: -1; /*change under revision*/
 }
 
 /*Result section*/
