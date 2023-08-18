@@ -103,7 +103,7 @@ html{
     display: none;
 }
 
-.casino_section-title, .sports_section-title, .result_title, .result_title2{
+.casino_section-title, .sports_section-title, .result_title, .result_title2, .reset_title{
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--titles);
@@ -177,13 +177,13 @@ html{
     margin: 0 0.5rem 0 0;
     display: block;
     position: relative;
-    z-index: -1; /*change under revision*/
+    visibility: hidden; /*change under revision*/
 }
 
 .sports_odds_combi_container {
     display: block;
     position: relative;
-    z-index: -1; /*change under revision*/
+    visibility: hidden; /*change under revision*/
 }
 
 /*Result section*/
@@ -207,7 +207,7 @@ html{
     font-family: "Exo", sans-serif;
 }
 
-.submit_btn {
+.submit_btn, .reset_button {
     width: 8rem;
     height: 3rem;
     border: 0.1rem solid var(--titles);
@@ -218,12 +218,12 @@ html{
     background-color: var(--buttons);
 }
 
-.result_title2 {
+.result_title2, .reset_title {
     margin: 0 0 0.5rem 0;
 }
 
 .display_result_container {
-    margin: 0;
+    margin: 0 0 1rem 0;
     width: 15rem;
     height: 3rem;
     background-color: var(--fondo);
