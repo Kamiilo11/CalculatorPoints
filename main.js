@@ -37,7 +37,7 @@ const combiValue2 = document.querySelector("#sports_combi2");
 const combiValue3 = document.querySelector("#sports_combi3");
 const combiValue4 = document.querySelector("#sports_combi4");
 
-console.log(singleValue1.value);
+console.log(singleValue1.id);
 console.log(singleValue2.value);
 console.log(singleValue3.value);
 console.log(singleValue4.value);
@@ -61,10 +61,10 @@ const resetBtn = document.querySelector(".reset_button");
 console.log(resultInput.value);
 console.log(resultBtn);
 
-resultBtn.addEventListener("click", () => { //test to get value and write html to be erased when finished
-    console.log(typeof resultInput.value);
-    resultDisplay.innerHTML = resultInput.value;
-});
+//resultBtn.addEventListener("click", () => { //test to get value and write html, to be erased when finished
+//    console.log(typeof resultInput.value);
+//    resultDisplay.innerHTML = resultInput.value;
+//});
 
 resetBtn.addEventListener("click", () => {//test to remove the check on radio buttons, to be erased when finished
     slotsValue.checked = false
@@ -141,24 +141,28 @@ combiOddBtn.addEventListener("click", () => {
 //Make calculus of the points
 
 resultBtn.addEventListener("click", () => {
-    let valArr = [];
-    valArr.push(slotsValue.value, 
-        bjValue.value, 
-        rouletteValue.value, 
-        singleValue1.value,
-        singleValue2.value,
-        singleValue3.value,
-        singleValue4.value, 
-        combiValue1.value,
-        combiValue2.value,
-        combiValue3.value,
-        combiValue4.value,
-        );
-        console.log(valArr);
-    let valArrNum = [];
-    for (const element of valArr) {
-        valArrNum.push(Number(element));
+    if (singleValue1.checked == true) {
+        console.log('si leo sports');
     }
-    console.log(valArrNum);
 });
 
+
+//let valArr = [];
+//valArr.push(slotsValue.value, 
+//    bjValue.value, 
+//    rouletteValue.value, 
+//    singleValue1.value,
+//    singleValue2.value,
+//    singleValue3.value,
+//    singleValue4.value, 
+//    combiValue1.value,
+//    combiValue2.value,
+//    combiValue3.value,
+//    combiValue4.value,
+//    );
+//    console.log(valArr);
+//let valArrNum = [];
+//for (const element of valArr) {
+//    valArrNum.push(Number(element));
+//}
+//console.log(valArrNum);
