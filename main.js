@@ -9,12 +9,6 @@ const slotsValue = document.querySelector("#casino_slots");
 const bjValue = document.querySelector("#casino_blackjack");
 const rouletteValue = document.querySelector("#casino_roulette");
 
-console.log(slotsValue.checked);
-console.log(bjValue.value);
-console.log(rouletteValue.value);
-
-
-
 //Sports selector
 const mainBtnSport = document.querySelector(".main-buttons-sports");
 const sportSection = document.querySelector(".sports_section");
@@ -37,38 +31,11 @@ const combiValue2 = document.querySelector("#sports_combi2");
 const combiValue3 = document.querySelector("#sports_combi3");
 const combiValue4 = document.querySelector("#sports_combi4");
 
-console.log(singleValue1.id);
-console.log(singleValue2.value);
-console.log(singleValue3.value);
-console.log(singleValue4.value);
-console.log(combiValue1.value);
-console.log(combiValue2.value);
-console.log(combiValue3.value);
-console.log(combiValue4.value);
-
-//body selector
-const bodySelector = document.querySelector("body");
-console.log(bodySelector.style);
-
-
-
 //obtain result values
 const resultInput = document.querySelector("#user_input")
 const resultBtn = document.querySelector(".submit_btn");
 const resultDisplay = document.querySelector(".display_result_span");
 const resetBtn = document.querySelector(".reset_button");
-
-console.log(resultInput.value);
-console.log(resultBtn);
-
-//resultBtn.addEventListener("click", () => { //test to get value and write html, to be erased when finished
-//    console.log(typeof resultInput.value);
-//    resultDisplay.innerHTML = resultInput.value;
-//});
-
-resetBtn.addEventListener("click", () => {//test to remove the check on radio buttons, to be erased when finished
-    slotsValue.checked = false
-})
 
 
 //add event listeners
@@ -141,28 +108,55 @@ combiOddBtn.addEventListener("click", () => {
 //Make calculus of the points
 
 resultBtn.addEventListener("click", () => {
-    if (singleValue1.checked == true) {
-        console.log('si leo sports');
+    if (singleValue1.checked == true && singleOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(singleValue1.value)).toFixed(2);
+    } else if (singleValue2.checked == true && singleOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(singleValue2.value)).toFixed(2);
+    } else if (singleValue3.checked == true && singleOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(singleValue3.value)).toFixed(2);
+    } else if (singleValue4.checked == true && singleOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(singleValue4.value)).toFixed(2);
+    } else if (combiValue1.checked == true && combiOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(combiValue1.value)).toFixed(2);
+    } else if (combiValue2.checked == true && combiOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(combiValue2.value)).toFixed(2);
+    } else if (combiValue3.checked == true && combiOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(combiValue3.value)).toFixed(2);
+    } else if (combiValue4.checked == true && combiOddSect.style.visibility == "visible" && sportSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(combiValue4.value)).toFixed(2);
+    } else if (slotsValue.checked == true && casinoSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(slotsValue.value)).toFixed(2);
+    } else if (bjValue.checked == true && casinoSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(bjValue.value)).toFixed(2);
+    } else if (rouletteValue.checked == true && casinoSection.style.display == "block") {
+        resultDisplay.innerHTML = (Number(resultInput.value) / Number(rouletteValue.value)).toFixed(2);
     }
 });
 
+//Reset selections
 
-//let valArr = [];
-//valArr.push(slotsValue.value, 
-//    bjValue.value, 
-//    rouletteValue.value, 
-//    singleValue1.value,
-//    singleValue2.value,
-//    singleValue3.value,
-//    singleValue4.value, 
-//    combiValue1.value,
-//    combiValue2.value,
-//    combiValue3.value,
-//    combiValue4.value,
-//    );
-//    console.log(valArr);
-//let valArrNum = [];
-//for (const element of valArr) {
-//    valArrNum.push(Number(element));
-//}
-//console.log(valArrNum);
+resetBtn.addEventListener("click", () => {
+    if (singleValue1.checked == true) {
+        singleValue1.checked = false;
+    } else if (singleValue2.checked == true) {
+        singleValue2.checked = false;
+    } else if (singleValue3.checked == true) {
+        singleValue3.checked = false;
+    } else if (singleValue4.checked == true) {
+        singleValue4.checked = false;
+    } else if (combiValue1.checked == true) {
+        combiValue1.checked = false;
+    } else if (combiValue2.checked == true) {
+        combiValue2.checked = false;
+    } else if (combiValue3.checked == true) {
+        combiValue3.checked = false;
+    } else if (combiValue4.checked == true) {
+        combiValue4.checked = false;
+    } else if (slotsValue.checked == true) {
+        slotsValue.checked = false;
+    } else if (bjValue.checked == true) {
+        bjValue.checked = false;
+    } else if (rouletteValue.checked == true) {
+        rouletteValue.checked = false;
+    }
+});
