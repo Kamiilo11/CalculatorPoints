@@ -138,25 +138,47 @@ resultBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", () => {
     if (singleValue1.checked == true) {
         singleValue1.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (singleValue2.checked == true) {
         singleValue2.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (singleValue3.checked == true) {
         singleValue3.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (singleValue4.checked == true) {
         singleValue4.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (combiValue1.checked == true) {
         combiValue1.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (combiValue2.checked == true) {
         combiValue2.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (combiValue3.checked == true) {
         combiValue3.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (combiValue4.checked == true) {
         combiValue4.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (slotsValue.checked == true) {
         slotsValue.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (bjValue.checked == true) {
         bjValue.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     } else if (rouletteValue.checked == true) {
         rouletteValue.checked = false;
+        resultInput.value = "";
+        resultDisplay.innerHTML = "Result";
     }
 });
